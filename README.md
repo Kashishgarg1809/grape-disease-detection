@@ -7,16 +7,16 @@ the stage of black rot disease in grape leaves using deep learning.
 Black rot is a serious fungal disease that damages grape crops 
 significantly. Early detection and stage identification through 
 image analysis can help farmers take timely action and reduce 
-crop loss.
+crop loss before it reaches an incurable stage.
 
 ## Approach
 - Built a Convolutional Neural Network (CNN) using TensorFlow and Keras
 - Performed image preprocessing — resizing and normalization
-- Dataset manually separated and organised into 4 stages of 
-  black rot infection plus healthy leaves
-- Trained the model to classify leaves into their respective 
-  disease stages
-- Evaluated using accuracy/loss curves and confusion matrix
+- Dataset sourced from Kaggle and manually organised into 5 
+  classes — 4 disease stages and healthy leaves
+- Trained the model to classify each leaf image into its 
+  respective disease stage
+- Evaluated using accuracy and loss curves across training epochs
 
 ## Tech Stack
 - Python
@@ -25,19 +25,19 @@ crop loss.
 - Matplotlib
 
 ## Dataset
-Sourced from Kaggle. Images manually organised into 4 stages 
-of black rot infection along with healthy grape leaf images.
-[Add your Kaggle dataset link here]
+Sourced from Kaggle. Images manually organised into 5 classes —
+4 stages of black rot infection and healthy grape leaf images.
+https://www.kaggle.com/datasets/emmarex/plantdisease/data
 
-## Classes / Stages Detected
+## Stages Detected
 - Healthy
-- Stage 1 — Early infection
-- Stage 2 — Moderate infection
-- Stage 3 — Severe infection
-- Stage 4 — Advanced infection
+- Early Infection
+- Lesion Expansion
+- Advanced Infection
+- Terminal (Incurable)
 
 ## Results
-[Add your accuracy and loss curve screenshots here]
+- Model accuracy: ~88.5%
 
 ## How to Run
 1. Clone this repository
